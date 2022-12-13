@@ -1,0 +1,160 @@
+.icon i{
+    width: 70px;
+    height: 70px;
+    background: #d21e2b;
+    border-radius: 8px;
+    margin-right: 8px;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+#theMainPage {
+    transition: margin-left .5s;
+    margin-left: 260px;
+}
+
+.cardShadow{
+    box-shadow: 0 0 15px -3px rgb(0 0 0 / 20%);
+}
+.theSideMenu{
+    height: 100%;
+    width: 260px;
+    position: absolute;
+    z-index: 3000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    /* border-right: 1px solid #ccc; */
+}
+.leftPart {
+    font-size: 14px;
+    margin-left: 20px;
+}
+.mobileNavIcon{
+    display: none;
+}
+.mobileMenuIcon{
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 776px) {
+    .time{
+        display: none;
+    }
+    .mobileNavIcon{
+        display: inline;
+    }
+}
+@media only screen and (max-width: 776px){
+    #theMainPage {
+        margin-left: 0px !important;
+    }
+    .theSideMenu{
+        width: 0px;
+    }
+    .adminMain-wrapper{
+        margin-top: 60px;
+        padding-left: 8px;
+    }
+}
+
+.theMainPage .breadcrum{
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.theMainPage h4{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+
+aside{
+    position: sticky;
+    top: 0;
+}
+#closeAside{
+    position: absolute;
+}
+#asideInner {
+    width: 269px;
+    background: #fff;
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: column;
+}
+.logoCont{
+    height: 61px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 30px;
+    border-bottom: 1px solid #DFDFDF;
+    justify-content: space-between;
+}
+#menuCont{
+    padding-top: 20px;
+    /* height: calc(var(--view-height) - 61px); */
+    /* border-right: 1px solid #DFDFDF; */
+    overflow-y: auto;
+}
+#menuCont a{
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #00321C;
+    gap: 16px;
+}
+#menuCont a svg{
+    width: 31px;
+}
+#menuCont a svg path{
+    fill: #00321C;
+}
+&.stroke svg path{
+    stroke: #00321C;
+    fill: none;
+}
+#menuCont a span {
+    flex: 1;
+}
+a.activeLink {
+    color: #406fe6 !important;
+    font-weight: bold;
+}
+&.activeLink &:not(.stroke) svh path{
+    fill: #406fe6;
+}
+&.activeLink &.stroke svg path{
+    stroke: #406fe6;
+}
+.submenuCont a{
+    padding: 8px 0;
+    padding-left: 99px;
+}
+.mobileMenuIcon{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 776px){
+    .mobileMenuIcon{
+        display: inline;
+    }
+}
+.section-block{
+    padding-top: 40px !important;
+}
+
+.iconMenu{
+    font-size: 21px;
+    padding-left: 6px;
+    padding-right: 4px;
+}
